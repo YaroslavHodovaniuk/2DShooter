@@ -7,7 +7,7 @@ public class SpawnerOnRadius : MonoBehaviour
     public GameObject Template;
     public int Count;
     public float Radius;
-    void Start()
+    void Awake()
     {
         int agleStep = 360 / Count;
         for(int i = 0; i < Count; i++)

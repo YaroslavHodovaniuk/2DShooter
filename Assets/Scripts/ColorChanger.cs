@@ -4,13 +4,13 @@ using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
 {
+    [SerializeField] private float Duration;
+    [SerializeField] private Color _targetColor;
+
     private SpriteRenderer _target;
     private float _runningTime;
-    [SerializeField] private float Duration;
-
-    [SerializeField] private Color _targetColor;
     private Color _startColor;
-    void Start()
+    void Awake()
     {
         _target = GetComponent<SpriteRenderer>();
         _startColor = _target.color;

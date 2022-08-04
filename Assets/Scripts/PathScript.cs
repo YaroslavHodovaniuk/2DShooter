@@ -11,7 +11,7 @@ public class PathScript : MonoBehaviour
     private Transform[] _points;
     private int _currentPoint;
 
-    private void Start()
+    private void Awake()
     {
         _points = new Transform[_path.childCount];
 

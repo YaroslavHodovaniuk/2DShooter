@@ -5,10 +5,11 @@ using UnityEngine;
 public class MovementPlayer : MonoBehaviour
 {
     [SerializeField] private float _speed;
+
     private Animator _animator;
     private SpriteRenderer _spriteRenderer;
 
-    private void Start()
+    private void Awake()
     {
         _animator = GetComponent<Animator>();
         _spriteRenderer = GetComponent<SpriteRenderer>();
